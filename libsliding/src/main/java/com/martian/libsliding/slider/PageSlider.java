@@ -70,6 +70,8 @@ public class PageSlider extends BaseSlider {
             mSlidingLayout.addView(nextView);
             nextView.scrollTo(-screenWidth, 0);
         }
+
+        mSlidingLayout.slideSelected(getAdapter().getCurrent());
     }
 
     @Override

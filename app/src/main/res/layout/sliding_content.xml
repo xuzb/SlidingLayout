@@ -7,17 +7,25 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:background="#666666"
-        android:orientation="horizontal">
+        android:gravity="center"
+        android:orientation="vertical">
 
         <TextView
             android:id="@+id/tv_content"
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
             android:ellipsize="end"
             android:gravity="center"
             android:textColor="@android:color/white"
-            android:textSize="16sp"
+            android:textSize="18sp"
             android:visibility="visible" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:text="点击下载"
+            android:textSize="18sp"
+            android:onClick="onDownloadClick"
+            android:layout_height="wrap_content" />
 
     </LinearLayout>
 </FrameLayout>

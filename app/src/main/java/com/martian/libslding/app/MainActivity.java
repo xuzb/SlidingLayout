@@ -1,5 +1,7 @@
 package com.martian.libslding.app;
 
+import android.content.Intent;
+import android.net.Uri;
 import android.support.v7.app.ActionBarActivity;
 import android.os.Bundle;
 import android.view.Menu;
@@ -57,6 +59,12 @@ public class MainActivity extends ActionBarActivity {
         mPagerMode = !mPagerMode;
     }
 
+    public void onDownloadClick(View v) {
+        Uri uri = Uri.parse("http://openbox.mobilem.360.cn/qcms/view/t/detail?t=2&sid=2369773&from=groupmessage&isappinstalled=0");
+        Intent intent = new Intent(Intent.ACTION_VIEW,uri);
+        startActivity(intent);
+    }
+
     @Override
     public boolean onOptionsItemSelected(MenuItem item) {
         if (item.getItemId() == R.id.action_switch) {
@@ -75,6 +83,7 @@ public class MainActivity extends ActionBarActivity {
     class TestSlidingAdapter extends SlidingAdapter<String> {
 
         private int index = 0;
+        private static final String ADS = "最好的小说导航阅读神器\n淘小说\n";
 
         @Override
         public View getView(View contentView, String s) {
@@ -103,7 +112,7 @@ public class MainActivity extends ActionBarActivity {
 
         @Override
         public String getNext() {
-            return "asdfasdfasdfasdf" + (index + 1);
+            return "第 " + (index + 1) + " 页\n\n" + ADS;
         }
 
         @Override
@@ -113,12 +122,12 @@ public class MainActivity extends ActionBarActivity {
 
         @Override
         public String getPrevious() {
-            return "adfafadfadfadf" + (index - 1);
+            return "第 " + (index - 1) + " 页\n\n" + ADS;
         }
 
         @Override
         public String getCurrent() {
-            return "asdfasdfasdfadsf" + index;
+            return "第 " + index + " 页\n\n" + ADS;
         }
     }
 }

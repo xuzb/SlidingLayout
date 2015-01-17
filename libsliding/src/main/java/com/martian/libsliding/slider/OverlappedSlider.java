@@ -65,6 +65,8 @@ public class OverlappedSlider extends BaseSlider {
             mSlidingLayout.addView(prevView);
             prevView.scrollTo(screenWidth, 0);
         }
+
+        mSlidingLayout.slideSelected(getAdapter().getCurrent());
     }
 
     public View getTopView() {
