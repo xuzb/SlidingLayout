@@ -3,7 +3,7 @@ A library for sliding layouts which are usually used in book reader.
 
 一个针对电子书阅读的划屏库 libsliding。
 
-[Demo下载](https://github.com/xuzb/SlidingLayout/blob/master/app-debug.apk)
+[Demo下载](https://github.com/xuzb/SlidingLayout/blob/master/app-debug.apk?raw=true)
 
 ## Overview
 本库的主要相关的类如下：
