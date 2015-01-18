@@ -71,3 +71,4 @@ protected abstract void computeNext();
 protected abstract void computePrevious();
 ```
 
+该库已使用在我们的小说阅读应用[淘小说](http://zhushou.360.cn/detail/index/soft_id/2369773?recrefer=SE_D_%E5%B0%8F%E8%AF%B4)中，欢迎大家下载试用
