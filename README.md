@@ -1,5 +1,5 @@
 # SlidingLayout
-A library for sliding layouts which are usually used in book reader.
+A library for sliding layouts which are usually used in book readers.
 
 一个针对电子书阅读的划屏库 libsliding。
 
