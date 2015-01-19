@@ -12,7 +12,7 @@ SlidingLayout: 用于滑动的Layout，类似ViewPager
 
 SldingAdapter: 用于获取数据和页面展示的类，类似Android的Adapter，不过SlidingAdapter有自己的接口需要实现
 
-Slider: 滑动方式的基类，包括PagerSlider和OverlappedSlider，分别表示左右平移滑动和左右覆盖滑动。
+Slider: 滑动方式的基类，包括PageSlider和OverlappedSlider，分别表示左右平移滑动和左右覆盖滑动。
 
 ## Usage
 在布局文件里加入如下的xml
@@ -31,7 +31,7 @@ slidingLayout.setAdapter(new SlidingAdapter() {...}); // 基于SlidingAdapter创
 
 然后设置滑动方式
 ```java
-slidingLayout.setSlider(new PagerSlider()); // 左右平移滑动，类似ViewPager
+slidingLayout.setSlider(new PageSlider()); // 左右平移滑动，类似ViewPager
 ```
 或者
 ```java
